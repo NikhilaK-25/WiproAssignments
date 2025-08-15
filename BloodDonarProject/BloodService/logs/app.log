@@ -1,0 +1,632 @@
+2025-08-15T13:53:57.434+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] com.nk.wipro.BloodServiceApplication     : Starting BloodServiceApplication using Java 21.0.7 with PID 30184 (C:\Users\Nikhila Kadaveru\eclipse-workspace\BloodDonarProject\BloodService\target\classes started by Nikhila Kadaveru in C:\Users\Nikhila Kadaveru\eclipse-workspace\BloodDonarProject\BloodService)
+2025-08-15T13:53:57.451+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] com.nk.wipro.BloodServiceApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-08-15T13:53:57.618+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:9091
+2025-08-15T13:53:57.619+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=BloodService, profiles=[default], label=null, version=96800b8590db13d3e98a8c6becc9c5a26d8514aa, state=
+2025-08-15T13:53:57.626+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-15T13:53:57.627+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-15T13:54:00.393+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-15T13:54:00.778+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 367 ms. Found 1 JPA repository interface.
+2025-08-15T13:54:01.565+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] o.s.cloud.context.scope.GenericScope     : BeanFactory id=fb37df7b-e838-3637-a205-5e84eae6405d
+2025-08-15T13:54:03.328+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9094 (http)
+2025-08-15T13:54:03.358+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-15T13:54:03.359+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-15T13:54:03.500+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-15T13:54:03.501+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5871 ms
+2025-08-15T13:54:05.129+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-15T13:54:05.226+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-15T13:54:05.301+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-15T13:54:05.814+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-15T13:54:05.887+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-15T13:54:06.507+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@42f70a7b
+2025-08-15T13:54:06.510+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-15T13:54:06.639+05:30  WARN 30184 --- [BloodService] [restartedMain] [                                                 ] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-15T13:54:06.678+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-15T13:54:08.216+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-15T13:54:08.319+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-15T13:54:09.277+05:30  WARN 30184 --- [BloodService] [restartedMain] [                                                 ] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-15T13:54:09.699+05:30  WARN 30184 --- [BloodService] [restartedMain] [                                                 ] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-08-15T13:54:09.876+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] o.s.c.openfeign.FeignClientFactoryBean   : For 'DonorService' URL not provided. Will try picking an instance via load-balancing.
+2025-08-15T13:54:14.473+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-08-15T13:54:14.709+05:30  WARN 30184 --- [BloodService] [restartedMain] [                                                 ] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-08-15T13:54:14.800+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-08-15T13:54:15.101+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-08-15T13:54:15.166+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-08-15T13:54:15.180+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-15T13:54:15.207+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-08-15T13:54:15.208+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-08-15T13:54:15.208+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-08-15T13:54:15.208+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-08-15T13:54:15.208+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-08-15T13:54:15.209+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-08-15T13:54:15.209+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-08-15T13:54:15.798+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-08-15T13:54:15.803+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-08-15T13:54:15.807+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-08-15T13:54:15.811+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1755246255810 with initial instances count: 3
+2025-08-15T13:54:15.842+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application BLOODSERVICE with eureka with status UP
+2025-08-15T13:54:15.845+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1755246255845, current=UP, previous=STARTING]
+2025-08-15T13:54:15.851+05:30  INFO 30184 --- [BloodService] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BLOODSERVICE/DESKTOP-M6GPA6L:BloodService:9094: registering service...
+2025-08-15T13:54:15.875+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9094 (http) with context path '/'
+2025-08-15T13:54:15.877+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9094
+2025-08-15T13:54:15.921+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] com.nk.wipro.BloodServiceApplication     : Started BloodServiceApplication in 21.226 seconds (process running for 23.083)
+2025-08-15T13:54:15.951+05:30  INFO 30184 --- [BloodService] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BLOODSERVICE/DESKTOP-M6GPA6L:BloodService:9094 - registration status: 204
+2025-08-15T13:54:16.316+05:30  INFO 30184 --- [BloodService] [RMI TCP Connection(10)-127.0.0.1] [                                                 ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-15T13:54:16.317+05:30  INFO 30184 --- [BloodService] [RMI TCP Connection(10)-127.0.0.1] [                                                 ] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-15T13:54:16.322+05:30  INFO 30184 --- [BloodService] [RMI TCP Connection(10)-127.0.0.1] [                                                 ] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2025-08-15T13:56:47.866+05:30  WARN 30184 --- [BloodService] [AsyncReporter{ZipkinHttpClientSender{http://localhost:9411/api/v2/spans}}] [                                                 ] z.r.i.AsyncReporter$BoundedAsyncReporter : Spans were dropped due to exceptions. All subsequent errors will be logged at FINE level.
+2025-08-15T13:56:47.881+05:30  WARN 30184 --- [BloodService] [AsyncReporter{ZipkinHttpClientSender{http://localhost:9411/api/v2/spans}}] [                                                 ] z.r.i.AsyncReporter$BoundedAsyncReporter : Dropped 1 spans due to ConnectException()
+
+java.net.ConnectException: null
+	at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:952) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:133) ~[java.net.http:na]
+	at org.springframework.boot.actuate.autoconfigure.tracing.zipkin.ZipkinHttpClientSender.postSpans(ZipkinHttpClientSender.java:60) ~[spring-boot-actuator-autoconfigure-3.5.4.jar:3.5.4]
+	at org.springframework.boot.actuate.autoconfigure.tracing.zipkin.HttpSender.postSpans(HttpSender.java:69) ~[spring-boot-actuator-autoconfigure-3.5.4.jar:3.5.4]
+	at org.springframework.boot.actuate.autoconfigure.tracing.zipkin.HttpSender.postSpans(HttpSender.java:41) ~[spring-boot-actuator-autoconfigure-3.5.4.jar:3.5.4]
+	at zipkin2.reporter.BaseHttpSender.send(BaseHttpSender.java:123) ~[zipkin-reporter-3.5.1.jar:na]
+	at zipkin2.reporter.internal.AsyncReporter$BoundedAsyncReporter.flush(AsyncReporter.java:266) ~[zipkin-reporter-3.5.1.jar:na]
+	at zipkin2.reporter.internal.AsyncReporter$Flusher.run(AsyncReporter.java:352) ~[zipkin-reporter-3.5.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+Caused by: java.net.ConnectException: null
+	at java.net.http/jdk.internal.net.http.common.Utils.toConnectException(Utils.java:1041) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:227) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.checkRetryConnect(PlainHttpConnection.java:280) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$2(PlainHttpConnection.java:238) ~[java.net.http:na]
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934) ~[na:na]
+	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:911) ~[na:na]
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510) ~[na:na]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1773) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	... 1 common frames omitted
+Caused by: java.nio.channels.ClosedChannelException: null
+	at java.base/sun.nio.ch.SocketChannelImpl.ensureOpen(SocketChannelImpl.java:202) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.beginConnect(SocketChannelImpl.java:786) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:874) ~[na:na]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$1(PlainHttpConnection.java:210) ~[java.net.http:na]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:571) ~[na:na]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:212) ~[java.net.http:na]
+	... 9 common frames omitted
+
+2025-08-15T13:59:15.216+05:30  INFO 30184 --- [BloodService] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-15T14:04:15.241+05:30  INFO 30184 --- [BloodService] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-15T14:09:15.288+05:30  INFO 30184 --- [BloodService] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-15T14:14:15.308+05:30  INFO 30184 --- [BloodService] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-15T14:19:15.333+05:30  INFO 30184 --- [BloodService] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-15T14:21:45.447+05:30  INFO 30184 --- [BloodService] [File Watcher] [                                                 ] rtingClassPathChangeChangedEventListener : Restarting due to 3 class path changes (2 additions, 0 deletions, 1 modification)
+2025-08-15T14:21:46.329+05:30  INFO 30184 --- [BloodService] [Thread-1] [                                                 ] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application BLOODSERVICE with eureka with status DOWN
+2025-08-15T14:21:46.339+05:30  INFO 30184 --- [BloodService] [Thread-1] [                                                 ] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1755247906339, current=DOWN, previous=UP]
+2025-08-15T14:21:46.355+05:30  INFO 30184 --- [BloodService] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BLOODSERVICE/DESKTOP-M6GPA6L:BloodService:9094: registering service...
+2025-08-15T14:21:47.003+05:30  INFO 30184 --- [BloodService] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BLOODSERVICE/DESKTOP-M6GPA6L:BloodService:9094 - registration status: 204
+2025-08-15T14:21:47.081+05:30  INFO 30184 --- [BloodService] [Thread-1] [                                                 ] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-15T14:21:47.259+05:30  INFO 30184 --- [BloodService] [tomcat-shutdown] [                                                 ] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-15T14:21:48.328+05:30  INFO 30184 --- [BloodService] [Thread-1] [                                                 ] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-15T14:21:49.231+05:30  INFO 30184 --- [BloodService] [Thread-1] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-15T14:21:49.389+05:30  INFO 30184 --- [BloodService] [Thread-1] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-15T14:21:49.649+05:30  INFO 30184 --- [BloodService] [Thread-1] [                                                 ] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-08-15T14:21:52.654+05:30  INFO 30184 --- [BloodService] [Thread-1] [                                                 ] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-08-15T14:21:53.183+05:30  INFO 30184 --- [BloodService] [Thread-1] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BLOODSERVICE/DESKTOP-M6GPA6L:BloodService:9094 - deregister  status: 200
+2025-08-15T14:21:53.186+05:30  INFO 30184 --- [BloodService] [Thread-1] [                                                 ] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-08-15T14:21:57.787+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] com.nk.wipro.BloodServiceApplication     : Starting BloodServiceApplication using Java 21.0.7 with PID 30184 (C:\Users\Nikhila Kadaveru\eclipse-workspace\BloodDonarProject\BloodService\target\classes started by Nikhila Kadaveru in C:\Users\Nikhila Kadaveru\eclipse-workspace\BloodDonarProject\BloodService)
+2025-08-15T14:21:57.789+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] com.nk.wipro.BloodServiceApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-08-15T14:21:57.802+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:9091
+2025-08-15T14:21:57.803+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=BloodService, profiles=[default], label=null, version=96800b8590db13d3e98a8c6becc9c5a26d8514aa, state=
+2025-08-15T14:22:04.333+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-15T14:22:04.396+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 50 ms. Found 1 JPA repository interface.
+2025-08-15T14:22:04.880+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] o.s.cloud.context.scope.GenericScope     : BeanFactory id=fb37df7b-e838-3637-a205-5e84eae6405d
+2025-08-15T14:22:06.738+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9094 (http)
+2025-08-15T14:22:06.758+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-15T14:22:06.760+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-15T14:22:07.130+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-15T14:22:07.131+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 9327 ms
+2025-08-15T14:22:09.659+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-15T14:22:09.673+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-15T14:22:09.725+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-15T14:22:09.730+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2025-08-15T14:22:09.996+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@a258ebc
+2025-08-15T14:22:09.997+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2025-08-15T14:22:10.007+05:30  WARN 30184 --- [BloodService] [restartedMain] [                                                 ] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-15T14:22:10.009+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-15T14:22:10.617+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-15T14:22:10.766+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-15T14:22:11.832+05:30  WARN 30184 --- [BloodService] [restartedMain] [                                                 ] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-15T14:22:12.297+05:30  WARN 30184 --- [BloodService] [restartedMain] [                                                 ] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-08-15T14:22:12.411+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] o.s.c.openfeign.FeignClientFactoryBean   : For 'DonorService' URL not provided. Will try picking an instance via load-balancing.
+2025-08-15T14:22:17.186+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-08-15T14:22:17.419+05:30  WARN 30184 --- [BloodService] [restartedMain] [                                                 ] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-08-15T14:22:17.521+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-08-15T14:22:17.656+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-08-15T14:22:17.668+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-08-15T14:22:17.669+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-15T14:22:17.669+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-08-15T14:22:17.670+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-08-15T14:22:17.670+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-08-15T14:22:17.670+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-08-15T14:22:17.670+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-08-15T14:22:17.670+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-08-15T14:22:17.670+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-08-15T14:22:17.786+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-08-15T14:22:17.787+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-08-15T14:22:17.788+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-08-15T14:22:17.789+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1755247937788 with initial instances count: 5
+2025-08-15T14:22:17.821+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application BLOODSERVICE with eureka with status UP
+2025-08-15T14:22:17.822+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1755247937822, current=UP, previous=STARTING]
+2025-08-15T14:22:17.822+05:30  INFO 30184 --- [BloodService] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BLOODSERVICE/DESKTOP-M6GPA6L:BloodService:9094: registering service...
+2025-08-15T14:22:17.832+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9094 (http) with context path '/'
+2025-08-15T14:22:17.833+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9094
+2025-08-15T14:22:17.883+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] com.nk.wipro.BloodServiceApplication     : Started BloodServiceApplication in 23.634 seconds (process running for 1705.044)
+2025-08-15T14:22:17.892+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-08-15T14:22:17.909+05:30  INFO 30184 --- [BloodService] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BLOODSERVICE/DESKTOP-M6GPA6L:BloodService:9094 - registration status: 204
+2025-08-15T14:22:18.463+05:30  INFO 30184 --- [BloodService] [File Watcher] [                                                 ] rtingClassPathChangeChangedEventListener : Restarting due to 20 class path changes (0 additions, 2 deletions, 18 modifications)
+2025-08-15T14:22:18.464+05:30  INFO 30184 --- [BloodService] [Thread-7] [                                                 ] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application BLOODSERVICE with eureka with status DOWN
+2025-08-15T14:22:18.465+05:30  INFO 30184 --- [BloodService] [Thread-7] [                                                 ] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1755247938465, current=DOWN, previous=UP]
+2025-08-15T14:22:18.465+05:30  INFO 30184 --- [BloodService] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BLOODSERVICE/DESKTOP-M6GPA6L:BloodService:9094: registering service...
+2025-08-15T14:22:18.467+05:30  INFO 30184 --- [BloodService] [Thread-7] [                                                 ] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-15T14:22:18.482+05:30  INFO 30184 --- [BloodService] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BLOODSERVICE/DESKTOP-M6GPA6L:BloodService:9094 - registration status: 204
+2025-08-15T14:22:18.494+05:30  INFO 30184 --- [BloodService] [tomcat-shutdown] [                                                 ] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-15T14:22:18.505+05:30  INFO 30184 --- [BloodService] [Thread-7] [                                                 ] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-15T14:22:18.507+05:30  INFO 30184 --- [BloodService] [Thread-7] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2025-08-15T14:22:18.523+05:30  INFO 30184 --- [BloodService] [Thread-7] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2025-08-15T14:22:19.527+05:30  INFO 30184 --- [BloodService] [Thread-7] [                                                 ] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-08-15T14:22:22.530+05:30  INFO 30184 --- [BloodService] [Thread-7] [                                                 ] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-08-15T14:22:22.546+05:30  INFO 30184 --- [BloodService] [Thread-7] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BLOODSERVICE/DESKTOP-M6GPA6L:BloodService:9094 - deregister  status: 200
+2025-08-15T14:22:22.547+05:30  INFO 30184 --- [BloodService] [Thread-7] [                                                 ] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-08-15T14:22:24.194+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] com.nk.wipro.BloodServiceApplication     : Starting BloodServiceApplication using Java 21.0.7 with PID 30184 (C:\Users\Nikhila Kadaveru\eclipse-workspace\BloodDonarProject\BloodService\target\classes started by Nikhila Kadaveru in C:\Users\Nikhila Kadaveru\eclipse-workspace\BloodDonarProject\BloodService)
+2025-08-15T14:22:24.195+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] com.nk.wipro.BloodServiceApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-08-15T14:22:24.200+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:9091
+2025-08-15T14:22:24.201+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=BloodService, profiles=[default], label=null, version=96800b8590db13d3e98a8c6becc9c5a26d8514aa, state=
+2025-08-15T14:22:25.665+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-15T14:22:25.712+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 38 ms. Found 1 JPA repository interface.
+2025-08-15T14:22:26.282+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] o.s.cloud.context.scope.GenericScope     : BeanFactory id=fb37df7b-e838-3637-a205-5e84eae6405d
+2025-08-15T14:22:27.398+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9094 (http)
+2025-08-15T14:22:27.414+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-15T14:22:27.415+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-15T14:22:27.689+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-15T14:22:27.690+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3489 ms
+2025-08-15T14:22:29.258+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-15T14:22:29.269+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-15T14:22:29.318+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-15T14:22:29.321+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2025-08-15T14:22:29.389+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@63a68562
+2025-08-15T14:22:29.390+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2025-08-15T14:22:29.394+05:30  WARN 30184 --- [BloodService] [restartedMain] [                                                 ] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-15T14:22:29.395+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-3)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-15T14:22:29.796+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-15T14:22:29.936+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-15T14:22:30.510+05:30  WARN 30184 --- [BloodService] [restartedMain] [                                                 ] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-15T14:22:30.778+05:30  WARN 30184 --- [BloodService] [restartedMain] [                                                 ] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-08-15T14:22:30.960+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] o.s.c.openfeign.FeignClientFactoryBean   : For 'DonorService' URL not provided. Will try picking an instance via load-balancing.
+2025-08-15T14:22:34.358+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-08-15T14:22:34.519+05:30  WARN 30184 --- [BloodService] [restartedMain] [                                                 ] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-08-15T14:22:34.564+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-08-15T14:22:34.679+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-08-15T14:22:34.688+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-08-15T14:22:34.689+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-15T14:22:34.690+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-08-15T14:22:34.690+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-08-15T14:22:34.690+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-08-15T14:22:34.690+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-08-15T14:22:34.690+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-08-15T14:22:34.690+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-08-15T14:22:34.691+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-08-15T14:22:34.763+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-08-15T14:22:34.764+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-08-15T14:22:34.765+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-08-15T14:22:34.765+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1755247954765 with initial instances count: 5
+2025-08-15T14:22:34.790+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application BLOODSERVICE with eureka with status UP
+2025-08-15T14:22:34.790+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1755247954790, current=UP, previous=STARTING]
+2025-08-15T14:22:34.790+05:30  INFO 30184 --- [BloodService] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BLOODSERVICE/DESKTOP-M6GPA6L:BloodService:9094: registering service...
+2025-08-15T14:22:34.802+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9094 (http) with context path '/'
+2025-08-15T14:22:34.803+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9094
+2025-08-15T14:22:34.820+05:30  INFO 30184 --- [BloodService] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BLOODSERVICE/DESKTOP-M6GPA6L:BloodService:9094 - registration status: 204
+2025-08-15T14:22:34.852+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] com.nk.wipro.BloodServiceApplication     : Started BloodServiceApplication in 12.119 seconds (process running for 1722.013)
+2025-08-15T14:22:34.856+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-08-15T14:23:15.815+05:30  INFO 30184 --- [BloodService] [File Watcher] [                                                 ] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-08-15T14:23:15.880+05:30  INFO 30184 --- [BloodService] [Thread-13] [                                                 ] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application BLOODSERVICE with eureka with status DOWN
+2025-08-15T14:23:15.885+05:30  INFO 30184 --- [BloodService] [Thread-13] [                                                 ] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1755247995885, current=DOWN, previous=UP]
+2025-08-15T14:23:15.891+05:30  INFO 30184 --- [BloodService] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BLOODSERVICE/DESKTOP-M6GPA6L:BloodService:9094: registering service...
+2025-08-15T14:23:16.030+05:30  INFO 30184 --- [BloodService] [Thread-13] [                                                 ] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-15T14:23:16.034+05:30  INFO 30184 --- [BloodService] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BLOODSERVICE/DESKTOP-M6GPA6L:BloodService:9094 - registration status: 204
+2025-08-15T14:23:16.076+05:30  INFO 30184 --- [BloodService] [tomcat-shutdown] [                                                 ] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-15T14:23:16.199+05:30  INFO 30184 --- [BloodService] [Thread-13] [                                                 ] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-15T14:23:16.230+05:30  INFO 30184 --- [BloodService] [Thread-13] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2025-08-15T14:23:16.282+05:30  INFO 30184 --- [BloodService] [Thread-13] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2025-08-15T14:23:17.353+05:30  INFO 30184 --- [BloodService] [Thread-13] [                                                 ] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-08-15T14:23:20.363+05:30  INFO 30184 --- [BloodService] [Thread-13] [                                                 ] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-08-15T14:23:20.386+05:30  INFO 30184 --- [BloodService] [Thread-13] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BLOODSERVICE/DESKTOP-M6GPA6L:BloodService:9094 - deregister  status: 200
+2025-08-15T14:23:20.386+05:30  INFO 30184 --- [BloodService] [Thread-13] [                                                 ] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-08-15T14:23:22.862+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] com.nk.wipro.BloodServiceApplication     : Starting BloodServiceApplication using Java 21.0.7 with PID 30184 (C:\Users\Nikhila Kadaveru\eclipse-workspace\BloodDonarProject\BloodService\target\classes started by Nikhila Kadaveru in C:\Users\Nikhila Kadaveru\eclipse-workspace\BloodDonarProject\BloodService)
+2025-08-15T14:23:22.863+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] com.nk.wipro.BloodServiceApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-08-15T14:23:22.870+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:9091
+2025-08-15T14:23:22.870+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=BloodService, profiles=[default], label=null, version=96800b8590db13d3e98a8c6becc9c5a26d8514aa, state=
+2025-08-15T14:23:24.119+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-15T14:23:24.160+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 36 ms. Found 1 JPA repository interface.
+2025-08-15T14:23:24.669+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] o.s.cloud.context.scope.GenericScope     : BeanFactory id=c1e2f897-8d59-3093-8437-7cd3e738ab82
+2025-08-15T14:23:25.397+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9094 (http)
+2025-08-15T14:23:25.401+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-15T14:23:25.402+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-15T14:23:25.494+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-15T14:23:25.495+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2625 ms
+2025-08-15T14:23:26.435+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-15T14:23:26.441+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-15T14:23:26.469+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-15T14:23:26.471+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2025-08-15T14:23:26.626+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@61200c64
+2025-08-15T14:23:26.628+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2025-08-15T14:23:26.633+05:30  WARN 30184 --- [BloodService] [restartedMain] [                                                 ] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-15T14:23:26.634+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-4)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-15T14:23:26.894+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-15T14:23:27.030+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-15T14:23:27.709+05:30  WARN 30184 --- [BloodService] [restartedMain] [                                                 ] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-15T14:23:28.044+05:30  WARN 30184 --- [BloodService] [restartedMain] [                                                 ] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-08-15T14:23:28.188+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] o.s.c.openfeign.FeignClientFactoryBean   : For 'DonorService' URL not provided. Will try picking an instance via load-balancing.
+2025-08-15T14:23:31.684+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-08-15T14:23:31.794+05:30  WARN 30184 --- [BloodService] [restartedMain] [                                                 ] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-08-15T14:23:31.839+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 27 endpoints beneath base path '/actuator'
+2025-08-15T14:23:31.963+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-08-15T14:23:31.971+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-08-15T14:23:31.971+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-15T14:23:31.972+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-08-15T14:23:31.974+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-08-15T14:23:31.974+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-08-15T14:23:31.974+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-08-15T14:23:31.974+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-08-15T14:23:31.974+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-08-15T14:23:31.974+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-08-15T14:23:32.076+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-08-15T14:23:32.077+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-08-15T14:23:32.079+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-08-15T14:23:32.080+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1755248012080 with initial instances count: 5
+2025-08-15T14:23:32.119+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application BLOODSERVICE with eureka with status UP
+2025-08-15T14:23:32.120+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1755248012120, current=UP, previous=STARTING]
+2025-08-15T14:23:32.120+05:30  INFO 30184 --- [BloodService] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BLOODSERVICE/DESKTOP-M6GPA6L:BloodService:9094: registering service...
+2025-08-15T14:23:32.143+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9094 (http) with context path '/'
+2025-08-15T14:23:32.144+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9094
+2025-08-15T14:23:32.160+05:30  INFO 30184 --- [BloodService] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BLOODSERVICE/DESKTOP-M6GPA6L:BloodService:9094 - registration status: 204
+2025-08-15T14:23:32.189+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] com.nk.wipro.BloodServiceApplication     : Started BloodServiceApplication in 11.181 seconds (process running for 1779.35)
+2025-08-15T14:23:32.218+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] .ConditionEvaluationDeltaLoggingListener : Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+   CachesEndpointAutoConfiguration#cachesEndpointWebExtension matched:
+      - @ConditionalOnBean (types: org.springframework.boot.actuate.cache.CachesEndpoint; SearchStrategy: all) found bean 'cachesEndpoint'; @ConditionalOnMissingBean (types: org.springframework.boot.actuate.cache.CachesEndpointWebExtension; SearchStrategy: all) did not find any beans (OnBeanCondition)
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   CircuitBreakersHealthIndicatorAutoConfiguration#circuitBreakersHealthIndicator matched:
+      - @ConditionalOnProperty (management.health.circuitbreakers.enabled) matched (OnPropertyCondition)
+      - @ConditionalOnMissingBean (names: circuitBreakersHealthIndicator; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   ConfigurationPropertiesReportEndpointAutoConfiguration#configurationPropertiesReportEndpointWebExtension matched:
+      - @ConditionalOnBean (types: org.springframework.boot.actuate.context.properties.ConfigurationPropertiesReportEndpoint; SearchStrategy: all) found bean 'configurationPropertiesReportEndpoint'; @ConditionalOnMissingBean (types: org.springframework.boot.actuate.context.properties.ConfigurationPropertiesReportEndpointWebExtension; SearchStrategy: all) did not find any beans (OnBeanCondition)
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   EnvironmentEndpointAutoConfiguration#environmentEndpointWebExtension matched:
+      - @ConditionalOnBean (types: org.springframework.boot.actuate.env.EnvironmentEndpoint; SearchStrategy: all) found bean 'environmentEndpoint'; @ConditionalOnMissingBean (types: org.springframework.boot.actuate.env.EnvironmentEndpointWebExtension; SearchStrategy: all) did not find any beans (OnBeanCondition)
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   SbomEndpointAutoConfiguration#sbomEndpointWebExtension matched:
+      - @ConditionalOnBean (types: org.springframework.boot.actuate.sbom.SbomEndpoint; SearchStrategy: all) found bean 'sbomEndpoint'; @ConditionalOnMissingBean (types: org.springframework.boot.actuate.sbom.SbomEndpointWebExtension; SearchStrategy: all) did not find any beans (OnBeanCondition)
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+
+Negative matches:
+-----------------
+
+   CompatibilityVerifierAutoConfiguration:
+      Did not match:
+         - @ConditionalOnProperty (spring.cloud.compatibility-verifier.enabled) found different value in property 'spring.cloud.compatibility-verifier.enabled' (OnPropertyCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2025-08-15T14:23:33.097+05:30  WARN 30184 --- [BloodService] [AsyncReporter{ZipkinHttpClientSender{http://localhost:9411/api/v2/spans}}] [                                                 ] z.r.i.AsyncReporter$BoundedAsyncReporter : Spans were dropped due to exceptions. All subsequent errors will be logged at FINE level.
+2025-08-15T14:23:33.097+05:30  WARN 30184 --- [BloodService] [AsyncReporter{ZipkinHttpClientSender{http://localhost:9411/api/v2/spans}}] [                                                 ] z.r.i.AsyncReporter$BoundedAsyncReporter : Dropped 2 spans due to ConnectException()
+
+java.net.ConnectException: null
+	at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:952) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:133) ~[java.net.http:na]
+	at org.springframework.boot.actuate.autoconfigure.tracing.zipkin.ZipkinHttpClientSender.postSpans(ZipkinHttpClientSender.java:60) ~[spring-boot-actuator-autoconfigure-3.5.4.jar:3.5.4]
+	at org.springframework.boot.actuate.autoconfigure.tracing.zipkin.HttpSender.postSpans(HttpSender.java:69) ~[spring-boot-actuator-autoconfigure-3.5.4.jar:3.5.4]
+	at org.springframework.boot.actuate.autoconfigure.tracing.zipkin.HttpSender.postSpans(HttpSender.java:41) ~[spring-boot-actuator-autoconfigure-3.5.4.jar:3.5.4]
+	at zipkin2.reporter.BaseHttpSender.send(BaseHttpSender.java:123) ~[zipkin-reporter-3.5.1.jar:na]
+	at zipkin2.reporter.internal.AsyncReporter$BoundedAsyncReporter.flush(AsyncReporter.java:266) ~[zipkin-reporter-3.5.1.jar:na]
+	at zipkin2.reporter.internal.AsyncReporter$Flusher.run(AsyncReporter.java:352) ~[zipkin-reporter-3.5.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+Caused by: java.net.ConnectException: null
+	at java.net.http/jdk.internal.net.http.common.Utils.toConnectException(Utils.java:1041) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:227) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.checkRetryConnect(PlainHttpConnection.java:280) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$2(PlainHttpConnection.java:238) ~[java.net.http:na]
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934) ~[na:na]
+	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:911) ~[na:na]
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510) ~[na:na]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1773) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	... 1 common frames omitted
+Caused by: java.nio.channels.ClosedChannelException: null
+	at java.base/sun.nio.ch.SocketChannelImpl.ensureOpen(SocketChannelImpl.java:202) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.beginConnect(SocketChannelImpl.java:786) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:874) ~[na:na]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$1(PlainHttpConnection.java:210) ~[java.net.http:na]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:571) ~[na:na]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:212) ~[java.net.http:na]
+	... 9 common frames omitted
+
+2025-08-15T14:23:36.167+05:30  INFO 30184 --- [BloodService] [File Watcher] [                                                 ] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2025-08-15T14:23:36.172+05:30  INFO 30184 --- [BloodService] [Thread-19] [                                                 ] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application BLOODSERVICE with eureka with status DOWN
+2025-08-15T14:23:36.172+05:30  INFO 30184 --- [BloodService] [Thread-19] [                                                 ] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1755248016172, current=DOWN, previous=UP]
+2025-08-15T14:23:36.174+05:30  INFO 30184 --- [BloodService] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BLOODSERVICE/DESKTOP-M6GPA6L:BloodService:9094: registering service...
+2025-08-15T14:23:36.177+05:30  INFO 30184 --- [BloodService] [Thread-19] [                                                 ] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-15T14:23:36.197+05:30  INFO 30184 --- [BloodService] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BLOODSERVICE/DESKTOP-M6GPA6L:BloodService:9094 - registration status: 204
+2025-08-15T14:23:36.211+05:30  INFO 30184 --- [BloodService] [tomcat-shutdown] [                                                 ] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-15T14:23:36.229+05:30  INFO 30184 --- [BloodService] [Thread-19] [                                                 ] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-15T14:23:36.231+05:30  INFO 30184 --- [BloodService] [Thread-19] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2025-08-15T14:23:36.259+05:30  INFO 30184 --- [BloodService] [Thread-19] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2025-08-15T14:23:37.115+05:30  INFO 30184 --- [BloodService] [Thread-19] [                                                 ] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-08-15T14:23:40.118+05:30  INFO 30184 --- [BloodService] [Thread-19] [                                                 ] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-08-15T14:23:40.144+05:30  INFO 30184 --- [BloodService] [Thread-19] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BLOODSERVICE/DESKTOP-M6GPA6L:BloodService:9094 - deregister  status: 200
+2025-08-15T14:23:40.145+05:30  INFO 30184 --- [BloodService] [Thread-19] [                                                 ] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-08-15T14:23:41.781+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] com.nk.wipro.BloodServiceApplication     : Starting BloodServiceApplication using Java 21.0.7 with PID 30184 (C:\Users\Nikhila Kadaveru\eclipse-workspace\BloodDonarProject\BloodService\target\classes started by Nikhila Kadaveru in C:\Users\Nikhila Kadaveru\eclipse-workspace\BloodDonarProject\BloodService)
+2025-08-15T14:23:41.782+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] com.nk.wipro.BloodServiceApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-08-15T14:23:41.788+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:9091
+2025-08-15T14:23:41.788+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=BloodService, profiles=[default], label=null, version=96800b8590db13d3e98a8c6becc9c5a26d8514aa, state=
+2025-08-15T14:23:43.105+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-15T14:23:43.128+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21 ms. Found 1 JPA repository interface.
+2025-08-15T14:23:43.523+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] o.s.cloud.context.scope.GenericScope     : BeanFactory id=c1e2f897-8d59-3093-8437-7cd3e738ab82
+2025-08-15T14:23:44.477+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9094 (http)
+2025-08-15T14:23:44.478+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-15T14:23:44.478+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-15T14:23:44.549+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-15T14:23:44.550+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2762 ms
+2025-08-15T14:23:45.337+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-15T14:23:45.342+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-15T14:23:45.377+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-15T14:23:45.378+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2025-08-15T14:23:45.421+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] com.zaxxer.hikari.pool.HikariPool        : HikariPool-5 - Added connection com.mysql.cj.jdbc.ConnectionImpl@110de59a
+2025-08-15T14:23:45.421+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2025-08-15T14:23:45.424+05:30  WARN 30184 --- [BloodService] [restartedMain] [                                                 ] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-15T14:23:45.425+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-5)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-15T14:23:45.618+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-15T14:23:45.682+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-15T14:23:46.345+05:30  WARN 30184 --- [BloodService] [restartedMain] [                                                 ] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-15T14:23:46.662+05:30  WARN 30184 --- [BloodService] [restartedMain] [                                                 ] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-08-15T14:23:46.817+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] o.s.c.openfeign.FeignClientFactoryBean   : For 'DonorService' URL not provided. Will try picking an instance via load-balancing.
+2025-08-15T14:23:50.237+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-08-15T14:23:50.370+05:30  WARN 30184 --- [BloodService] [restartedMain] [                                                 ] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-08-15T14:23:50.438+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 27 endpoints beneath base path '/actuator'
+2025-08-15T14:23:50.583+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-08-15T14:23:50.594+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-08-15T14:23:50.594+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-15T14:23:50.595+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-08-15T14:23:50.595+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-08-15T14:23:50.595+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-08-15T14:23:50.595+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-08-15T14:23:50.595+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-08-15T14:23:50.595+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-08-15T14:23:50.595+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-08-15T14:23:50.672+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-08-15T14:23:50.673+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-08-15T14:23:50.673+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-08-15T14:23:50.674+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1755248030674 with initial instances count: 5
+2025-08-15T14:23:50.702+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application BLOODSERVICE with eureka with status UP
+2025-08-15T14:23:50.702+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1755248030702, current=UP, previous=STARTING]
+2025-08-15T14:23:50.702+05:30  INFO 30184 --- [BloodService] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BLOODSERVICE/DESKTOP-M6GPA6L:BloodService:9094: registering service...
+2025-08-15T14:23:50.710+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9094 (http) with context path '/'
+2025-08-15T14:23:50.711+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9094
+2025-08-15T14:23:50.748+05:30  INFO 30184 --- [BloodService] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BLOODSERVICE/DESKTOP-M6GPA6L:BloodService:9094 - registration status: 204
+2025-08-15T14:23:50.776+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] com.nk.wipro.BloodServiceApplication     : Started BloodServiceApplication in 10.488 seconds (process running for 1797.937)
+2025-08-15T14:23:50.781+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-08-15T14:23:51.680+05:30  WARN 30184 --- [BloodService] [AsyncReporter{ZipkinHttpClientSender{http://localhost:9411/api/v2/spans}}] [                                                 ] z.r.i.AsyncReporter$BoundedAsyncReporter : Spans were dropped due to exceptions. All subsequent errors will be logged at FINE level.
+2025-08-15T14:23:51.680+05:30  WARN 30184 --- [BloodService] [AsyncReporter{ZipkinHttpClientSender{http://localhost:9411/api/v2/spans}}] [                                                 ] z.r.i.AsyncReporter$BoundedAsyncReporter : Dropped 2 spans due to ConnectException()
+
+java.net.ConnectException: null
+	at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:952) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:133) ~[java.net.http:na]
+	at org.springframework.boot.actuate.autoconfigure.tracing.zipkin.ZipkinHttpClientSender.postSpans(ZipkinHttpClientSender.java:60) ~[spring-boot-actuator-autoconfigure-3.5.4.jar:3.5.4]
+	at org.springframework.boot.actuate.autoconfigure.tracing.zipkin.HttpSender.postSpans(HttpSender.java:69) ~[spring-boot-actuator-autoconfigure-3.5.4.jar:3.5.4]
+	at org.springframework.boot.actuate.autoconfigure.tracing.zipkin.HttpSender.postSpans(HttpSender.java:41) ~[spring-boot-actuator-autoconfigure-3.5.4.jar:3.5.4]
+	at zipkin2.reporter.BaseHttpSender.send(BaseHttpSender.java:123) ~[zipkin-reporter-3.5.1.jar:na]
+	at zipkin2.reporter.internal.AsyncReporter$BoundedAsyncReporter.flush(AsyncReporter.java:266) ~[zipkin-reporter-3.5.1.jar:na]
+	at zipkin2.reporter.internal.AsyncReporter$Flusher.run(AsyncReporter.java:352) ~[zipkin-reporter-3.5.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+Caused by: java.net.ConnectException: null
+	at java.net.http/jdk.internal.net.http.common.Utils.toConnectException(Utils.java:1041) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:227) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.checkRetryConnect(PlainHttpConnection.java:280) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$2(PlainHttpConnection.java:238) ~[java.net.http:na]
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934) ~[na:na]
+	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:911) ~[na:na]
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510) ~[na:na]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1773) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	... 1 common frames omitted
+Caused by: java.nio.channels.ClosedChannelException: null
+	at java.base/sun.nio.ch.SocketChannelImpl.ensureOpen(SocketChannelImpl.java:202) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.beginConnect(SocketChannelImpl.java:786) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:874) ~[na:na]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$1(PlainHttpConnection.java:210) ~[java.net.http:na]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:571) ~[na:na]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:212) ~[java.net.http:na]
+	... 9 common frames omitted
+
+2025-08-15T14:28:50.605+05:30  INFO 30184 --- [BloodService] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-15T14:33:50.652+05:30  INFO 30184 --- [BloodService] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-15T14:38:50.693+05:30  INFO 30184 --- [BloodService] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-15T14:43:50.786+05:30  INFO 30184 --- [BloodService] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-15T14:45:15.636+05:30  INFO 30184 --- [BloodService] [File Watcher] [                                                 ] rtingClassPathChangeChangedEventListener : Restarting due to 3 class path changes (2 additions, 0 deletions, 1 modification)
+2025-08-15T14:45:15.716+05:30  INFO 30184 --- [BloodService] [Thread-25] [                                                 ] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application BLOODSERVICE with eureka with status DOWN
+2025-08-15T14:45:15.723+05:30  INFO 30184 --- [BloodService] [Thread-25] [                                                 ] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1755249315723, current=DOWN, previous=UP]
+2025-08-15T14:45:15.730+05:30  INFO 30184 --- [BloodService] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BLOODSERVICE/DESKTOP-M6GPA6L:BloodService:9094: registering service...
+2025-08-15T14:45:15.836+05:30  INFO 30184 --- [BloodService] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BLOODSERVICE/DESKTOP-M6GPA6L:BloodService:9094 - registration status: 204
+2025-08-15T14:45:15.906+05:30  INFO 30184 --- [BloodService] [Thread-25] [                                                 ] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-15T14:45:15.957+05:30  INFO 30184 --- [BloodService] [tomcat-shutdown] [                                                 ] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-15T14:45:16.099+05:30  INFO 30184 --- [BloodService] [Thread-25] [                                                 ] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-15T14:45:16.148+05:30  INFO 30184 --- [BloodService] [Thread-25] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2025-08-15T14:45:16.224+05:30  INFO 30184 --- [BloodService] [Thread-25] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+2025-08-15T14:45:17.185+05:30  INFO 30184 --- [BloodService] [Thread-25] [                                                 ] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-08-15T14:45:20.188+05:30  INFO 30184 --- [BloodService] [Thread-25] [                                                 ] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-08-15T14:45:20.215+05:30  INFO 30184 --- [BloodService] [Thread-25] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BLOODSERVICE/DESKTOP-M6GPA6L:BloodService:9094 - deregister  status: 200
+2025-08-15T14:45:20.218+05:30  INFO 30184 --- [BloodService] [Thread-25] [                                                 ] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-08-15T14:45:27.835+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] com.nk.wipro.BloodServiceApplication     : Starting BloodServiceApplication using Java 21.0.7 with PID 30184 (C:\Users\Nikhila Kadaveru\eclipse-workspace\BloodDonarProject\BloodService\target\classes started by Nikhila Kadaveru in C:\Users\Nikhila Kadaveru\eclipse-workspace\BloodDonarProject\BloodService)
+2025-08-15T14:45:27.837+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] com.nk.wipro.BloodServiceApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-08-15T14:45:27.846+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:9091
+2025-08-15T14:45:27.846+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=BloodService, profiles=[default], label=null, version=96800b8590db13d3e98a8c6becc9c5a26d8514aa, state=
+2025-08-15T14:45:29.944+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-15T14:45:29.987+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 36 ms. Found 1 JPA repository interface.
+2025-08-15T14:45:30.476+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] o.s.cloud.context.scope.GenericScope     : BeanFactory id=c1e2f897-8d59-3093-8437-7cd3e738ab82
+2025-08-15T14:45:31.742+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9094 (http)
+2025-08-15T14:45:31.747+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-15T14:45:31.749+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-15T14:45:31.982+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-15T14:45:31.983+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4135 ms
+2025-08-15T14:45:33.401+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-15T14:45:33.415+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-15T14:45:33.470+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-15T14:45:33.478+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Starting...
+2025-08-15T14:45:33.793+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] com.zaxxer.hikari.pool.HikariPool        : HikariPool-6 - Added connection com.mysql.cj.jdbc.ConnectionImpl@16a8acf4
+2025-08-15T14:45:33.793+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Start completed.
+2025-08-15T14:45:33.801+05:30  WARN 30184 --- [BloodService] [restartedMain] [                                                 ] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-15T14:45:33.802+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-6)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-15T14:45:34.166+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-15T14:45:34.311+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-15T14:45:35.154+05:30  WARN 30184 --- [BloodService] [restartedMain] [                                                 ] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-15T14:45:35.492+05:30  WARN 30184 --- [BloodService] [restartedMain] [                                                 ] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-08-15T14:45:35.652+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] o.s.c.openfeign.FeignClientFactoryBean   : For 'DonorService' URL not provided. Will try picking an instance via load-balancing.
+2025-08-15T14:45:39.677+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-08-15T14:45:39.798+05:30  WARN 30184 --- [BloodService] [restartedMain] [                                                 ] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-08-15T14:45:39.846+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 27 endpoints beneath base path '/actuator'
+2025-08-15T14:45:40.012+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-08-15T14:45:40.039+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-08-15T14:45:40.040+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-15T14:45:40.040+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-08-15T14:45:40.041+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-08-15T14:45:40.041+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-08-15T14:45:40.041+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-08-15T14:45:40.041+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-08-15T14:45:40.041+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-08-15T14:45:40.041+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-08-15T14:45:40.171+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-08-15T14:45:40.172+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-08-15T14:45:40.173+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-08-15T14:45:40.173+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1755249340173 with initial instances count: 5
+2025-08-15T14:45:40.204+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application BLOODSERVICE with eureka with status UP
+2025-08-15T14:45:40.204+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1755249340204, current=UP, previous=STARTING]
+2025-08-15T14:45:40.205+05:30  INFO 30184 --- [BloodService] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BLOODSERVICE/DESKTOP-M6GPA6L:BloodService:9094: registering service...
+2025-08-15T14:45:40.213+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9094 (http) with context path '/'
+2025-08-15T14:45:40.214+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9094
+2025-08-15T14:45:40.241+05:30  INFO 30184 --- [BloodService] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BLOODSERVICE/DESKTOP-M6GPA6L:BloodService:9094 - registration status: 204
+2025-08-15T14:45:40.272+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] com.nk.wipro.BloodServiceApplication     : Started BloodServiceApplication in 18.731 seconds (process running for 3107.434)
+2025-08-15T14:45:40.280+05:30  INFO 30184 --- [BloodService] [restartedMain] [                                                 ] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-08-15T14:45:41.179+05:30  WARN 30184 --- [BloodService] [AsyncReporter{ZipkinHttpClientSender{http://localhost:9411/api/v2/spans}}] [                                                 ] z.r.i.AsyncReporter$BoundedAsyncReporter : Spans were dropped due to exceptions. All subsequent errors will be logged at FINE level.
+2025-08-15T14:45:41.180+05:30  WARN 30184 --- [BloodService] [AsyncReporter{ZipkinHttpClientSender{http://localhost:9411/api/v2/spans}}] [                                                 ] z.r.i.AsyncReporter$BoundedAsyncReporter : Dropped 2 spans due to ConnectException()
+
+java.net.ConnectException: null
+	at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:952) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:133) ~[java.net.http:na]
+	at org.springframework.boot.actuate.autoconfigure.tracing.zipkin.ZipkinHttpClientSender.postSpans(ZipkinHttpClientSender.java:60) ~[spring-boot-actuator-autoconfigure-3.5.4.jar:3.5.4]
+	at org.springframework.boot.actuate.autoconfigure.tracing.zipkin.HttpSender.postSpans(HttpSender.java:69) ~[spring-boot-actuator-autoconfigure-3.5.4.jar:3.5.4]
+	at org.springframework.boot.actuate.autoconfigure.tracing.zipkin.HttpSender.postSpans(HttpSender.java:41) ~[spring-boot-actuator-autoconfigure-3.5.4.jar:3.5.4]
+	at zipkin2.reporter.BaseHttpSender.send(BaseHttpSender.java:123) ~[zipkin-reporter-3.5.1.jar:na]
+	at zipkin2.reporter.internal.AsyncReporter$BoundedAsyncReporter.flush(AsyncReporter.java:266) ~[zipkin-reporter-3.5.1.jar:na]
+	at zipkin2.reporter.internal.AsyncReporter$Flusher.run(AsyncReporter.java:352) ~[zipkin-reporter-3.5.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+Caused by: java.net.ConnectException: null
+	at java.net.http/jdk.internal.net.http.common.Utils.toConnectException(Utils.java:1041) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:227) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.checkRetryConnect(PlainHttpConnection.java:280) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$2(PlainHttpConnection.java:238) ~[java.net.http:na]
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934) ~[na:na]
+	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:911) ~[na:na]
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510) ~[na:na]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1773) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	... 1 common frames omitted
+Caused by: java.nio.channels.ClosedChannelException: null
+	at java.base/sun.nio.ch.SocketChannelImpl.ensureOpen(SocketChannelImpl.java:202) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.beginConnect(SocketChannelImpl.java:786) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:874) ~[na:na]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$1(PlainHttpConnection.java:210) ~[java.net.http:na]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:571) ~[na:na]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:212) ~[java.net.http:na]
+	... 9 common frames omitted
+
+2025-08-15T14:50:40.056+05:30  INFO 30184 --- [BloodService] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-15T14:50:41.658+05:30  INFO 30184 --- [BloodService] [http-nio-9094-exec-1] [                                                 ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-15T14:50:41.658+05:30  INFO 30184 --- [BloodService] [http-nio-9094-exec-1] [                                                 ] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-15T14:50:41.751+05:30  INFO 30184 --- [BloodService] [http-nio-9094-exec-1] [                                                 ] o.s.web.servlet.DispatcherServlet        : Completed initialization in 92 ms
+2025-08-15T14:55:40.093+05:30  INFO 30184 --- [BloodService] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-15T15:00:40.123+05:30  INFO 30184 --- [BloodService] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-15T15:05:40.170+05:30  INFO 30184 --- [BloodService] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-15T15:09:18.431+05:30  INFO 30184 --- [BloodService] [RMI TCP Connection(104)-127.0.0.1] [                                                 ] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-08-15T15:09:18.500+05:30  INFO 30184 --- [BloodService] [RMI TCP Connection(104)-127.0.0.1] [                                                 ] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application BLOODSERVICE with eureka with status DOWN
+2025-08-15T15:09:18.502+05:30  INFO 30184 --- [BloodService] [RMI TCP Connection(104)-127.0.0.1] [                                                 ] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1755250758502, current=DOWN, previous=UP]
+2025-08-15T15:09:18.504+05:30  INFO 30184 --- [BloodService] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BLOODSERVICE/DESKTOP-M6GPA6L:BloodService:9094: registering service...
+2025-08-15T15:09:18.528+05:30  INFO 30184 --- [BloodService] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BLOODSERVICE/DESKTOP-M6GPA6L:BloodService:9094 - registration status: 204
+2025-08-15T15:09:18.578+05:30  INFO 30184 --- [BloodService] [RMI TCP Connection(104)-127.0.0.1] [                                                 ] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-15T15:09:18.601+05:30  INFO 30184 --- [BloodService] [tomcat-shutdown] [                                                 ] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-15T15:09:18.666+05:30  INFO 30184 --- [BloodService] [RMI TCP Connection(104)-127.0.0.1] [                                                 ] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-15T15:09:18.695+05:30  INFO 30184 --- [BloodService] [RMI TCP Connection(104)-127.0.0.1] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown initiated...
+2025-08-15T15:09:18.714+05:30  INFO 30184 --- [BloodService] [RMI TCP Connection(104)-127.0.0.1] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown completed.
+2025-08-15T15:09:19.592+05:30  INFO 30184 --- [BloodService] [RMI TCP Connection(104)-127.0.0.1] [                                                 ] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...

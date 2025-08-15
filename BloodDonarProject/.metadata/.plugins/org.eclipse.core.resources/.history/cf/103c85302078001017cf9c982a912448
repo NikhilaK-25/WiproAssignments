@@ -1,0 +1,32 @@
+package com.nk.wipro.controller;
+
+import lombok.RequiredArgsConstructor;
+import org.springframework.web.bind.annotation.*;
+import com.nk.wipro.entity.Blood;
+import com.nk.wipro.services.BloodService;
+import jakarta.validation.Valid;
+import java.util.List;
+
+@RestController
+@RequestMapping("/api/blood")
+@RequiredArgsConstructor
+public class BloodController {
+
+    private final BloodService bloodService;
+
+    @PostMapping
+    @ResponseStatus(org.springframework.http.HttpStatus.CREATED)
+    public Blood addBlood(@Valid @RequestBody Blood blood) {
+        return bloodService.addBlood(blood);
+    }
+
+    @GetMapping
+    public List<Blood> getBloodWithQuantities() {
+        return bloodService.getBloodWithQuantities();
+    }
+
+    @PatchMapping("/{id}/status")
+    public Blood updateBloodStatus(@PathVariable Long id, @RequestParam String status) {
+        return bloodService.updateBloodStatus(id, status);
+    }
+}

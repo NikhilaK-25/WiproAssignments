@@ -1,0 +1,5 @@
+package com.nk.wipro.exception;
+
+public class GlobalExceptionalHandler {
+
+}

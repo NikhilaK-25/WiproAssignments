@@ -1,0 +1,20 @@
+package com.nk.wipro.Feign;
+
+import com.nk.wipro.entity.Blood;
+import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
+
+@FeignClient(name = "DonorService", path = "/api/v1/donor")
+public interface BloodServiceFeign {
+
+    @PostMapping("/add")
+    Blood addBloodGroup(@RequestBody Blood blood);
+
+    @GetMapping("/all")
+    List<Blood> getBloodGroups();
+
+    @PutMapping("/updateStatus")
+    Blood updateBloodStatus(@RequestParam Long id, @RequestParam String status);
+}

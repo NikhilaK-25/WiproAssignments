@@ -1,0 +1,21 @@
+package com.nk.wipro.Feign;
+
+import java.util.List;
+
+import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.web.bind.annotation.*;
+
+import com.nk.wipro.entity.RequestBlood;
+
+@FeignClient(name = "REQUEST-BLOOD-SERVICE", url = "http://localhost:9095/api/v1/request-blood")
+public interface RequestBloodServiceFeign {
+
+    @PostMapping
+    RequestBlood addRequest(@RequestBody RequestBlood request);
+
+    @GetMapping
+    List<RequestBlood> getAllRequests();
+
+    @GetMapping("/{id}")
+    RequestBlood getRequestStatus(@PathVariable Long id);
+}

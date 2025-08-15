@@ -1,0 +1,20 @@
+package com.nk.wipro.entity;
+
+import jakarta.persistence.*;
+import lombok.*;
+
+@Entity
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
+public class Donor {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    private String name;
+    private String city;
+    private String bloodGroup;
+    private int age;
+}

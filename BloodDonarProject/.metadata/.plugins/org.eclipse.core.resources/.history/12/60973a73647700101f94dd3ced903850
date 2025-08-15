@@ -1,0 +1,32 @@
+package com.nk.wipro.entity;
+
+import jakarta.persistence.*;
+import jakarta.validation.constraints.*;
+import lombok.*;
+
+@Entity
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
+public class RequestBlood {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    @NotBlank(message = "Patient name is required")
+    private String patientName;
+
+    @NotBlank(message = "Blood group is required")
+    private String bloodGroup;
+
+    @NotBlank(message = "City is required")
+    private String city;
+
+    @Min(value = 1, message = "Quantity must be at least 1 unit")
+    private int quantity;
+
+    @Enumerated(EnumType.STRING)
+    private RequestStatus status; 
+}

@@ -1,0 +1,30 @@
+package com.nk.wipro.aspect;
+
+import lombok.extern.slf4j.Slf4j;
+import org.aspectj.lang.JoinPoint;
+import org.aspectj.lang.annotation.*;
+import org.springframework.stereotype.Component;
+
+@Slf4j
+@Aspect
+@Component
+public class LoggingAspect {
+
+    
+    @Before("execution(* com.nk.wipro.services.BloodServiceImpl.*(..))")
+    public void logBefore(JoinPoint joinPoint) {
+        log.info("Starting method: {}", joinPoint.getSignature().toShortString());
+    }
+
+    
+    @AfterReturning(value = "execution(* com.nk.wipro.services.BloodServiceImpl.*(..))", returning = "result")
+    public void logAfterReturning(JoinPoint joinPoint, Object result) {
+        log.info("Completed method: {}, Returned: {}", joinPoint.getSignature().toShortString(), result);
+    }
+
+    
+    @AfterThrowing(value = "execution(* com.nk.wipro.services.BloodServiceImpl.*(..))", throwing = "ex")
+    public void logAfterThrowing(JoinPoint joinPoint, Exception ex) {
+        log.error("Exception in method: {}, Message: {}", joinPoint.getSignature().toShortString(), ex.getMessage());
+    }
+}

@@ -1,0 +1,15 @@
+package com.nk.wipro.dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class BloodDto {
+    private Long id;
+    private String bloodGroup;
+    private Integer quantity;
+    private String status;
+}

@@ -1,0 +1,10 @@
+package com.nk.wipro.services;
+
+import com.nk.wipro.entity.Blood;
+import java.util.List;
+
+public interface BloodService {
+    Blood addBloodGroup(Blood blood);
+    List<Blood> getBloodGroups();
+    Blood updateBloodStatus(Long id, String status);
+}

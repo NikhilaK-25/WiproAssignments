@@ -1,0 +1,5 @@
+package com.nk.wipro.Feign;
+
+public interface BloodServiceInterface {
+
+}

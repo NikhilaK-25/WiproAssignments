@@ -1,0 +1,33 @@
+package com.nk.wipro.controller;
+
+import com.nk.wipro.entity.RequestBlood;
+import com.nk.wipro.services.RequestBloodService;
+import jakarta.validation.Valid;
+import lombok.RequiredArgsConstructor;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
+
+@RestController
+@RequestMapping("/api/v1/request-blood")
+@RequiredArgsConstructor
+public class RequestBloodController {
+
+    private final RequestBloodService requestBloodService;
+
+    @PostMapping
+    public ResponseEntity<RequestBlood> addRequest(@Valid @RequestBody RequestBlood requestBlood) {
+        return ResponseEntity.ok(requestBloodService.addRequest(requestBlood));
+    }
+
+    @GetMapping
+    public ResponseEntity<List<RequestBlood>> getAllRequests() {
+        return ResponseEntity.ok(requestBloodService.getAllRequests());
+    }
+
+    @GetMapping("/{id}")
+    public ResponseEntity<RequestBlood> getRequestStatus(@PathVariable Long id) {
+        return ResponseEntity.ok(requestBloodService.getRequestStatus(id));
+    }
+}

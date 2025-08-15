@@ -1,0 +1,10 @@
+package com.nk.wipro.repo;
+
+import java.util.List;
+import org.springframework.data.jpa.repository.JpaRepository;
+import com.nk.wipro.entity.Blood;
+
+public interface BloodRepository extends JpaRepository<Blood, Long> {
+
+    List<Blood> findByBloodGroup(String bloodGroup);
+}

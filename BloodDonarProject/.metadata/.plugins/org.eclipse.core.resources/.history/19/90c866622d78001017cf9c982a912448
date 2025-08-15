@@ -1,0 +1,20 @@
+package com.nk.wipro.Feign;
+
+import java.util.List;
+
+import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+
+import com.nk.wipro.entity.Notification;
+
+@FeignClient(name = "NOTIFICATION-SERVICE", path = "/api/v1/notifications")
+public interface NotificationServiceFeign {
+
+    @PostMapping
+    Notification sendNotification(@RequestBody Notification notification);
+
+    @GetMapping
+    List<Notification> getAllNotifications();
+}

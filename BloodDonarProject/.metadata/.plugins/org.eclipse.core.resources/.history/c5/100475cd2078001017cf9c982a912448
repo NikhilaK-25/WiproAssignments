@@ -1,0 +1,62 @@
+package com.nk.wipro.services;
+
+import com.nk.wipro.entity.Blood;
+import com.nk.wipro.entity.Donor;
+import com.nk.wipro.feign.BloodServiceFeign;
+import com.nk.wipro.repo.DonorRepository;
+import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Service;
+
+import java.util.List;
+
+@Service
+@RequiredArgsConstructor
+public class DonorServiceImpl implements DonorService {
+
+    private final DonorRepository donorRepository;
+    private final BloodServiceFeign bloodServiceFeign;
+
+    @Override
+    public Donor addDonor(Donor donor) {
+        Donor saved = donorRepository.save(donor);
+
+        // Also update BloodService
+        Blood blood = Blood.builder()
+                .bloodGroup(saved.getBloodGroup())
+                .status("Available")
+                .build();
+        bloodServiceFeign.addBloodGroup(blood);
+
+        return saved;
+    }
+
+    @Override
+    public Donor updateDonor(Long id, Donor donor) {
+        Donor existing = donorRepository.findById(id).orElseThrow();
+        existing.setName(donor.getName());
+        existing.setCity(donor.getCity());
+        existing.setBloodGroup(donor.getBloodGroup());
+        existing.setAge(donor.getAge());
+        return donorRepository.save(existing);
+    }
+
+    @Override
+    public List<Donor> getDonorsByBloodGroup(String bloodGroup) {
+        return donorRepository.findByBloodGroup(bloodGroup);
+    }
+
+    @Override
+    public List<Donor> getDonorsByCity(String city) {
+        return donorRepository.findByCity(city);
+    }
+
+    @Override
+    public void deleteDonor(Long id) {
+        donorRepository.deleteById(id);
+    }
+
+    @Override
+    public Donor getDonorById(Long id) {
+        return donorRepository.findById(id).orElseThrow();
+    }
+}

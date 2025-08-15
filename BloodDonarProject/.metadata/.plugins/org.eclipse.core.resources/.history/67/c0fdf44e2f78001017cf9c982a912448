@@ -1,0 +1,38 @@
+package com.nk.wipro.services;
+
+import com.nk.wipro.entity.Blood;
+import com.nk.wipro.repo.BloodRepository;
+import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Service;
+
+import java.util.List;
+
+@Service
+@RequiredArgsConstructor
+public class BloodServiceImpl implements BloodService {
+
+    private final BloodRepository bloodRepository;
+
+    @Override
+    public Blood addBloodGroup(Blood blood) {
+        return bloodRepository.save(blood);
+    }
+
+    @Override
+    public List<Blood> getBloodGroups() {
+        return bloodRepository.findAll();
+    }
+
+    @Override
+    public Blood updateBloodStatus(Long id, String status) {
+        Blood b = bloodRepository.findById(id).orElseThrow();
+        b.setStatus(status);
+        return bloodRepository.save(b);
+    }
+    @Override
+    public Blood getBloodById(Long id) {
+        return bloodRepository.findById(id)
+                .orElseThrow(() -> new BloodNotFoundException("Blood record not found with ID: " + id));
+    }
+
+}

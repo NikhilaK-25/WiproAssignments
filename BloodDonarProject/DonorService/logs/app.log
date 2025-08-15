@@ -1,0 +1,421 @@
+2025-08-15T13:53:04.143+05:30  INFO 4280 --- [DonorService] [restartedMain] com.nk.wipro.DonorServiceApplication     : Starting DonorServiceApplication using Java 21.0.7 with PID 4280 (C:\Users\Nikhila Kadaveru\eclipse-workspace\BloodDonarProject\DonorService\target\classes started by Nikhila Kadaveru in C:\Users\Nikhila Kadaveru\eclipse-workspace\BloodDonarProject\DonorService)
+2025-08-15T13:53:04.155+05:30  INFO 4280 --- [DonorService] [restartedMain] com.nk.wipro.DonorServiceApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-08-15T13:53:04.274+05:30  INFO 4280 --- [DonorService] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:9091
+2025-08-15T13:53:04.276+05:30  INFO 4280 --- [DonorService] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=DonorService, profiles=[default], label=null, version=96800b8590db13d3e98a8c6becc9c5a26d8514aa, state=
+2025-08-15T13:53:04.283+05:30  INFO 4280 --- [DonorService] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-15T13:53:04.284+05:30  INFO 4280 --- [DonorService] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-15T13:53:07.449+05:30  INFO 4280 --- [DonorService] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-15T13:53:07.839+05:30  INFO 4280 --- [DonorService] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 362 ms. Found 1 JPA repository interface.
+2025-08-15T13:53:08.733+05:30  INFO 4280 --- [DonorService] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=8c4da85f-7307-38bd-b794-3e925f635a4d
+2025-08-15T13:53:10.943+05:30  INFO 4280 --- [DonorService] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9093 (http)
+2025-08-15T13:53:10.978+05:30  INFO 4280 --- [DonorService] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-15T13:53:10.979+05:30  INFO 4280 --- [DonorService] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-15T13:53:11.130+05:30  INFO 4280 --- [DonorService] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-15T13:53:11.131+05:30  INFO 4280 --- [DonorService] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 6846 ms
+2025-08-15T13:53:12.523+05:30  INFO 4280 --- [DonorService] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-15T13:53:12.671+05:30  INFO 4280 --- [DonorService] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-15T13:53:12.747+05:30  INFO 4280 --- [DonorService] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-15T13:53:13.392+05:30  INFO 4280 --- [DonorService] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-15T13:53:13.468+05:30  INFO 4280 --- [DonorService] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-15T13:53:14.239+05:30  INFO 4280 --- [DonorService] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@50224a79
+2025-08-15T13:53:14.243+05:30  INFO 4280 --- [DonorService] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-15T13:53:14.446+05:30  WARN 4280 --- [DonorService] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-15T13:53:14.543+05:30  INFO 4280 --- [DonorService] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-15T13:53:16.681+05:30  INFO 4280 --- [DonorService] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-15T13:53:16.891+05:30  INFO 4280 --- [DonorService] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-15T13:53:18.172+05:30  WARN 4280 --- [DonorService] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-15T13:53:22.667+05:30  INFO 4280 --- [DonorService] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-15T13:53:22.877+05:30  INFO 4280 --- [DonorService] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-08-15T13:53:23.211+05:30  WARN 4280 --- [DonorService] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-08-15T13:53:23.284+05:30  INFO 4280 --- [DonorService] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-08-15T13:53:23.600+05:30  INFO 4280 --- [DonorService] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-08-15T13:53:23.679+05:30  INFO 4280 --- [DonorService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-08-15T13:53:23.694+05:30  INFO 4280 --- [DonorService] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-15T13:53:23.723+05:30  INFO 4280 --- [DonorService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-08-15T13:53:23.724+05:30  INFO 4280 --- [DonorService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-08-15T13:53:23.724+05:30  INFO 4280 --- [DonorService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-08-15T13:53:23.725+05:30  INFO 4280 --- [DonorService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-08-15T13:53:23.725+05:30  INFO 4280 --- [DonorService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-08-15T13:53:23.726+05:30  INFO 4280 --- [DonorService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-08-15T13:53:23.726+05:30  INFO 4280 --- [DonorService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-08-15T13:53:24.561+05:30  INFO 4280 --- [DonorService] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-08-15T13:53:24.571+05:30  INFO 4280 --- [DonorService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-08-15T13:53:24.577+05:30  INFO 4280 --- [DonorService] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-08-15T13:53:24.583+05:30  INFO 4280 --- [DonorService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1755246204582 with initial instances count: 2
+2025-08-15T13:53:24.637+05:30  INFO 4280 --- [DonorService] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application DONORSERVICE with eureka with status UP
+2025-08-15T13:53:24.640+05:30  INFO 4280 --- [DonorService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1755246204640, current=UP, previous=STARTING]
+2025-08-15T13:53:24.645+05:30  INFO 4280 --- [DonorService] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DONORSERVICE/DESKTOP-M6GPA6L:DonorService:9093: registering service...
+2025-08-15T13:53:24.702+05:30  INFO 4280 --- [DonorService] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9093 (http) with context path '/'
+2025-08-15T13:53:24.704+05:30  INFO 4280 --- [DonorService] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9093
+2025-08-15T13:53:24.769+05:30  INFO 4280 --- [DonorService] [restartedMain] com.nk.wipro.DonorServiceApplication     : Started DonorServiceApplication in 23.632 seconds (process running for 25.725)
+2025-08-15T13:53:24.778+05:30  INFO 4280 --- [DonorService] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DONORSERVICE/DESKTOP-M6GPA6L:DonorService:9093 - registration status: 204
+2025-08-15T13:53:25.547+05:30  INFO 4280 --- [DonorService] [RMI TCP Connection(8)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-15T13:53:25.548+05:30  INFO 4280 --- [DonorService] [RMI TCP Connection(8)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-15T13:53:25.553+05:30  INFO 4280 --- [DonorService] [RMI TCP Connection(8)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2025-08-15T13:58:23.750+05:30  INFO 4280 --- [DonorService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-15T14:03:23.808+05:30  INFO 4280 --- [DonorService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-15T14:08:23.835+05:30  INFO 4280 --- [DonorService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-15T14:13:23.856+05:30  INFO 4280 --- [DonorService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-15T14:18:23.892+05:30  INFO 4280 --- [DonorService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-15T14:23:23.935+05:30  INFO 4280 --- [DonorService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-15T14:28:23.989+05:30  INFO 4280 --- [DonorService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-15T14:33:24.055+05:30  INFO 4280 --- [DonorService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-15T14:38:24.104+05:30  INFO 4280 --- [DonorService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-15T14:40:55.530+05:30  INFO 4280 --- [DonorService] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 3 class path changes (2 additions, 0 deletions, 1 modification)
+2025-08-15T14:40:56.747+05:30  INFO 4280 --- [DonorService] [Thread-7] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application DONORSERVICE with eureka with status DOWN
+2025-08-15T14:40:56.764+05:30  INFO 4280 --- [DonorService] [Thread-7] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1755249056762, current=DOWN, previous=UP]
+2025-08-15T14:40:56.785+05:30  INFO 4280 --- [DonorService] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DONORSERVICE/DESKTOP-M6GPA6L:DonorService:9093: registering service...
+2025-08-15T14:40:57.915+05:30  INFO 4280 --- [DonorService] [Thread-7] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-15T14:40:58.011+05:30  INFO 4280 --- [DonorService] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DONORSERVICE/DESKTOP-M6GPA6L:DonorService:9093 - registration status: 204
+2025-08-15T14:40:58.114+05:30  INFO 4280 --- [DonorService] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-15T14:40:58.359+05:30  INFO 4280 --- [DonorService] [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-15T14:40:58.521+05:30  INFO 4280 --- [DonorService] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-15T14:40:58.587+05:30  INFO 4280 --- [DonorService] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-15T14:40:58.611+05:30  INFO 4280 --- [DonorService] [Thread-7] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-08-15T14:41:01.796+05:30  INFO 4280 --- [DonorService] [Thread-7] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-08-15T14:41:01.802+05:30  WARN 4280 --- [DonorService] [DiscoveryClient-%d] c.netflix.discovery.TimedSupervisorTask  : task supervisor shutting down, can't accept the task
+2025-08-15T14:41:01.845+05:30  INFO 4280 --- [DonorService] [Thread-7] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DONORSERVICE/DESKTOP-M6GPA6L:DonorService:9093 - deregister  status: 200
+2025-08-15T14:41:01.849+05:30  INFO 4280 --- [DonorService] [Thread-7] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-08-15T14:41:05.314+05:30  INFO 4280 --- [DonorService] [restartedMain] com.nk.wipro.DonorServiceApplication     : Starting DonorServiceApplication using Java 21.0.7 with PID 4280 (C:\Users\Nikhila Kadaveru\eclipse-workspace\BloodDonarProject\DonorService\target\classes started by Nikhila Kadaveru in C:\Users\Nikhila Kadaveru\eclipse-workspace\BloodDonarProject\DonorService)
+2025-08-15T14:41:05.315+05:30  INFO 4280 --- [DonorService] [restartedMain] com.nk.wipro.DonorServiceApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-08-15T14:41:05.323+05:30  INFO 4280 --- [DonorService] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:9091
+2025-08-15T14:41:05.324+05:30  INFO 4280 --- [DonorService] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=DonorService, profiles=[default], label=null, version=96800b8590db13d3e98a8c6becc9c5a26d8514aa, state=
+2025-08-15T14:41:07.167+05:30  INFO 4280 --- [DonorService] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-15T14:41:07.212+05:30  INFO 4280 --- [DonorService] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 29 ms. Found 1 JPA repository interface.
+2025-08-15T14:41:07.521+05:30  INFO 4280 --- [DonorService] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=8c4da85f-7307-38bd-b794-3e925f635a4d
+2025-08-15T14:41:08.270+05:30  INFO 4280 --- [DonorService] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9093 (http)
+2025-08-15T14:41:08.274+05:30  INFO 4280 --- [DonorService] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-15T14:41:08.274+05:30  INFO 4280 --- [DonorService] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-15T14:41:08.361+05:30  INFO 4280 --- [DonorService] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-15T14:41:08.361+05:30  INFO 4280 --- [DonorService] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3037 ms
+2025-08-15T14:41:09.180+05:30  INFO 4280 --- [DonorService] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-15T14:41:09.189+05:30  INFO 4280 --- [DonorService] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-15T14:41:09.220+05:30  INFO 4280 --- [DonorService] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-15T14:41:09.224+05:30  INFO 4280 --- [DonorService] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2025-08-15T14:41:09.397+05:30  INFO 4280 --- [DonorService] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7e657b4d
+2025-08-15T14:41:09.398+05:30  INFO 4280 --- [DonorService] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2025-08-15T14:41:09.406+05:30  WARN 4280 --- [DonorService] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-15T14:41:09.407+05:30  INFO 4280 --- [DonorService] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-15T14:41:09.561+05:30  INFO 4280 --- [DonorService] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-15T14:41:09.674+05:30  INFO 4280 --- [DonorService] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-15T14:41:10.265+05:30  WARN 4280 --- [DonorService] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-15T14:41:13.193+05:30  INFO 4280 --- [DonorService] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-15T14:41:13.355+05:30  INFO 4280 --- [DonorService] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-08-15T14:41:13.669+05:30  WARN 4280 --- [DonorService] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-08-15T14:41:13.717+05:30  INFO 4280 --- [DonorService] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-08-15T14:41:13.872+05:30  INFO 4280 --- [DonorService] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-08-15T14:41:13.888+05:30  INFO 4280 --- [DonorService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-08-15T14:41:13.888+05:30  INFO 4280 --- [DonorService] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-15T14:41:13.889+05:30  INFO 4280 --- [DonorService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-08-15T14:41:13.889+05:30  INFO 4280 --- [DonorService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-08-15T14:41:13.889+05:30  INFO 4280 --- [DonorService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-08-15T14:41:13.889+05:30  INFO 4280 --- [DonorService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-08-15T14:41:13.889+05:30  INFO 4280 --- [DonorService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-08-15T14:41:13.889+05:30  INFO 4280 --- [DonorService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-08-15T14:41:13.889+05:30  INFO 4280 --- [DonorService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-08-15T14:41:14.022+05:30  INFO 4280 --- [DonorService] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-08-15T14:41:14.023+05:30  INFO 4280 --- [DonorService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-08-15T14:41:14.024+05:30  INFO 4280 --- [DonorService] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-08-15T14:41:14.024+05:30  INFO 4280 --- [DonorService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1755249074024 with initial instances count: 6
+2025-08-15T14:41:14.058+05:30  INFO 4280 --- [DonorService] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application DONORSERVICE with eureka with status UP
+2025-08-15T14:41:14.058+05:30  INFO 4280 --- [DonorService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1755249074058, current=UP, previous=STARTING]
+2025-08-15T14:41:14.058+05:30  INFO 4280 --- [DonorService] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DONORSERVICE/DESKTOP-M6GPA6L:DonorService:9093: registering service...
+2025-08-15T14:41:14.070+05:30  INFO 4280 --- [DonorService] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9093 (http) with context path '/'
+2025-08-15T14:41:14.071+05:30  INFO 4280 --- [DonorService] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9093
+2025-08-15T14:41:14.094+05:30  INFO 4280 --- [DonorService] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DONORSERVICE/DESKTOP-M6GPA6L:DonorService:9093 - registration status: 204
+2025-08-15T14:41:14.127+05:30  INFO 4280 --- [DonorService] [restartedMain] com.nk.wipro.DonorServiceApplication     : Started DonorServiceApplication in 11.334 seconds (process running for 2895.085)
+2025-08-15T14:41:14.135+05:30  INFO 4280 --- [DonorService] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-08-15T14:41:14.609+05:30  INFO 4280 --- [DonorService] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 17 class path changes (0 additions, 2 deletions, 15 modifications)
+2025-08-15T14:41:14.612+05:30  INFO 4280 --- [DonorService] [Thread-9] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application DONORSERVICE with eureka with status DOWN
+2025-08-15T14:41:14.613+05:30  INFO 4280 --- [DonorService] [Thread-9] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1755249074613, current=DOWN, previous=UP]
+2025-08-15T14:41:14.613+05:30  INFO 4280 --- [DonorService] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DONORSERVICE/DESKTOP-M6GPA6L:DonorService:9093: registering service...
+2025-08-15T14:41:14.614+05:30  INFO 4280 --- [DonorService] [Thread-9] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-15T14:41:14.621+05:30  INFO 4280 --- [DonorService] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DONORSERVICE/DESKTOP-M6GPA6L:DonorService:9093 - registration status: 204
+2025-08-15T14:41:14.624+05:30  INFO 4280 --- [DonorService] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-15T14:41:14.633+05:30  INFO 4280 --- [DonorService] [Thread-9] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-15T14:41:14.635+05:30  INFO 4280 --- [DonorService] [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2025-08-15T14:41:14.646+05:30  INFO 4280 --- [DonorService] [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2025-08-15T14:41:14.648+05:30  INFO 4280 --- [DonorService] [Thread-9] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-08-15T14:41:17.649+05:30  INFO 4280 --- [DonorService] [Thread-9] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-08-15T14:41:17.661+05:30  INFO 4280 --- [DonorService] [Thread-9] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DONORSERVICE/DESKTOP-M6GPA6L:DonorService:9093 - deregister  status: 200
+2025-08-15T14:41:17.662+05:30  INFO 4280 --- [DonorService] [Thread-9] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-08-15T14:41:19.483+05:30  INFO 4280 --- [DonorService] [restartedMain] com.nk.wipro.DonorServiceApplication     : Starting DonorServiceApplication using Java 21.0.7 with PID 4280 (C:\Users\Nikhila Kadaveru\eclipse-workspace\BloodDonarProject\DonorService\target\classes started by Nikhila Kadaveru in C:\Users\Nikhila Kadaveru\eclipse-workspace\BloodDonarProject\DonorService)
+2025-08-15T14:41:19.484+05:30  INFO 4280 --- [DonorService] [restartedMain] com.nk.wipro.DonorServiceApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-08-15T14:41:19.488+05:30  INFO 4280 --- [DonorService] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:9091
+2025-08-15T14:41:19.488+05:30  INFO 4280 --- [DonorService] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=DonorService, profiles=[default], label=null, version=96800b8590db13d3e98a8c6becc9c5a26d8514aa, state=
+2025-08-15T14:41:20.556+05:30  INFO 4280 --- [DonorService] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-15T14:41:20.578+05:30  INFO 4280 --- [DonorService] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18 ms. Found 1 JPA repository interface.
+2025-08-15T14:41:20.822+05:30  INFO 4280 --- [DonorService] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=17946057-bbc8-3c85-97b2-88159f231f40
+2025-08-15T14:41:21.388+05:30  INFO 4280 --- [DonorService] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9093 (http)
+2025-08-15T14:41:21.389+05:30  INFO 4280 --- [DonorService] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-15T14:41:21.389+05:30  INFO 4280 --- [DonorService] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-15T14:41:21.459+05:30  INFO 4280 --- [DonorService] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-15T14:41:21.459+05:30  INFO 4280 --- [DonorService] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1971 ms
+2025-08-15T14:41:22.184+05:30  INFO 4280 --- [DonorService] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-15T14:41:22.194+05:30  INFO 4280 --- [DonorService] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-15T14:41:22.221+05:30  INFO 4280 --- [DonorService] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-15T14:41:22.223+05:30  INFO 4280 --- [DonorService] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2025-08-15T14:41:22.248+05:30  INFO 4280 --- [DonorService] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@f18a12f
+2025-08-15T14:41:22.249+05:30  INFO 4280 --- [DonorService] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2025-08-15T14:41:22.252+05:30  WARN 4280 --- [DonorService] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-15T14:41:22.253+05:30  INFO 4280 --- [DonorService] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-3)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-15T14:41:22.382+05:30  INFO 4280 --- [DonorService] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-15T14:41:22.407+05:30  INFO 4280 --- [DonorService] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-15T14:41:22.904+05:30  WARN 4280 --- [DonorService] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-15T14:41:25.772+05:30  INFO 4280 --- [DonorService] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-15T14:41:25.933+05:30  INFO 4280 --- [DonorService] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-08-15T14:41:26.089+05:30  WARN 4280 --- [DonorService] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-08-15T14:41:26.116+05:30  INFO 4280 --- [DonorService] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 27 endpoints beneath base path '/actuator'
+2025-08-15T14:41:26.248+05:30  INFO 4280 --- [DonorService] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-08-15T14:41:26.257+05:30  INFO 4280 --- [DonorService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-08-15T14:41:26.257+05:30  INFO 4280 --- [DonorService] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-15T14:41:26.257+05:30  INFO 4280 --- [DonorService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-08-15T14:41:26.257+05:30  INFO 4280 --- [DonorService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-08-15T14:41:26.257+05:30  INFO 4280 --- [DonorService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-08-15T14:41:26.257+05:30  INFO 4280 --- [DonorService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-08-15T14:41:26.257+05:30  INFO 4280 --- [DonorService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-08-15T14:41:26.257+05:30  INFO 4280 --- [DonorService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-08-15T14:41:26.257+05:30  INFO 4280 --- [DonorService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-08-15T14:41:26.329+05:30  INFO 4280 --- [DonorService] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-08-15T14:41:26.330+05:30  INFO 4280 --- [DonorService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-08-15T14:41:26.331+05:30  INFO 4280 --- [DonorService] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-08-15T14:41:26.331+05:30  INFO 4280 --- [DonorService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1755249086331 with initial instances count: 6
+2025-08-15T14:41:26.358+05:30  INFO 4280 --- [DonorService] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application DONORSERVICE with eureka with status UP
+2025-08-15T14:41:26.358+05:30  INFO 4280 --- [DonorService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1755249086358, current=UP, previous=STARTING]
+2025-08-15T14:41:26.358+05:30  INFO 4280 --- [DonorService] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DONORSERVICE/DESKTOP-M6GPA6L:DonorService:9093: registering service...
+2025-08-15T14:41:26.373+05:30  INFO 4280 --- [DonorService] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9093 (http) with context path '/'
+2025-08-15T14:41:26.375+05:30  INFO 4280 --- [DonorService] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9093
+2025-08-15T14:41:26.394+05:30  INFO 4280 --- [DonorService] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DONORSERVICE/DESKTOP-M6GPA6L:DonorService:9093 - registration status: 204
+2025-08-15T14:41:26.418+05:30  INFO 4280 --- [DonorService] [restartedMain] com.nk.wipro.DonorServiceApplication     : Started DonorServiceApplication in 8.635 seconds (process running for 2907.375)
+2025-08-15T14:41:26.428+05:30  INFO 4280 --- [DonorService] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+   CachesEndpointAutoConfiguration#cachesEndpointWebExtension matched:
+      - @ConditionalOnBean (types: org.springframework.boot.actuate.cache.CachesEndpoint; SearchStrategy: all) found bean 'cachesEndpoint'; @ConditionalOnMissingBean (types: org.springframework.boot.actuate.cache.CachesEndpointWebExtension; SearchStrategy: all) did not find any beans (OnBeanCondition)
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   CircuitBreakersHealthIndicatorAutoConfiguration#circuitBreakersHealthIndicator matched:
+      - @ConditionalOnProperty (management.health.circuitbreakers.enabled) matched (OnPropertyCondition)
+      - @ConditionalOnMissingBean (names: circuitBreakersHealthIndicator; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   ConfigurationPropertiesReportEndpointAutoConfiguration#configurationPropertiesReportEndpointWebExtension matched:
+      - @ConditionalOnBean (types: org.springframework.boot.actuate.context.properties.ConfigurationPropertiesReportEndpoint; SearchStrategy: all) found bean 'configurationPropertiesReportEndpoint'; @ConditionalOnMissingBean (types: org.springframework.boot.actuate.context.properties.ConfigurationPropertiesReportEndpointWebExtension; SearchStrategy: all) did not find any beans (OnBeanCondition)
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   EnvironmentEndpointAutoConfiguration#environmentEndpointWebExtension matched:
+      - @ConditionalOnBean (types: org.springframework.boot.actuate.env.EnvironmentEndpoint; SearchStrategy: all) found bean 'environmentEndpoint'; @ConditionalOnMissingBean (types: org.springframework.boot.actuate.env.EnvironmentEndpointWebExtension; SearchStrategy: all) did not find any beans (OnBeanCondition)
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   SbomEndpointAutoConfiguration#sbomEndpointWebExtension matched:
+      - @ConditionalOnBean (types: org.springframework.boot.actuate.sbom.SbomEndpoint; SearchStrategy: all) found bean 'sbomEndpoint'; @ConditionalOnMissingBean (types: org.springframework.boot.actuate.sbom.SbomEndpointWebExtension; SearchStrategy: all) did not find any beans (OnBeanCondition)
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+
+Negative matches:
+-----------------
+
+   CompatibilityVerifierAutoConfiguration:
+      Did not match:
+         - @ConditionalOnProperty (spring.cloud.compatibility-verifier.enabled) found different value in property 'spring.cloud.compatibility-verifier.enabled' (OnPropertyCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2025-08-15T14:43:44.838+05:30  INFO 4280 --- [DonorService] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2025-08-15T14:43:44.953+05:30  INFO 4280 --- [DonorService] [Thread-15] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application DONORSERVICE with eureka with status DOWN
+2025-08-15T14:43:44.956+05:30  INFO 4280 --- [DonorService] [Thread-15] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1755249224956, current=DOWN, previous=UP]
+2025-08-15T14:43:44.963+05:30  INFO 4280 --- [DonorService] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DONORSERVICE/DESKTOP-M6GPA6L:DonorService:9093: registering service...
+2025-08-15T14:43:45.097+05:30  INFO 4280 --- [DonorService] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DONORSERVICE/DESKTOP-M6GPA6L:DonorService:9093 - registration status: 204
+2025-08-15T14:43:45.145+05:30  INFO 4280 --- [DonorService] [Thread-15] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-15T14:43:45.214+05:30  INFO 4280 --- [DonorService] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-15T14:43:45.387+05:30  INFO 4280 --- [DonorService] [Thread-15] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-15T14:43:45.469+05:30  INFO 4280 --- [DonorService] [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2025-08-15T14:43:45.564+05:30  INFO 4280 --- [DonorService] [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2025-08-15T14:43:45.600+05:30  INFO 4280 --- [DonorService] [Thread-15] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-08-15T14:43:48.605+05:30  INFO 4280 --- [DonorService] [Thread-15] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-08-15T14:43:48.643+05:30  INFO 4280 --- [DonorService] [Thread-15] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DONORSERVICE/DESKTOP-M6GPA6L:DonorService:9093 - deregister  status: 200
+2025-08-15T14:43:48.644+05:30  INFO 4280 --- [DonorService] [Thread-15] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-08-15T14:43:52.156+05:30  INFO 4280 --- [DonorService] [restartedMain] com.nk.wipro.DonorServiceApplication     : Starting DonorServiceApplication using Java 21.0.7 with PID 4280 (C:\Users\Nikhila Kadaveru\eclipse-workspace\BloodDonarProject\DonorService\target\classes started by Nikhila Kadaveru in C:\Users\Nikhila Kadaveru\eclipse-workspace\BloodDonarProject\DonorService)
+2025-08-15T14:43:52.157+05:30  INFO 4280 --- [DonorService] [restartedMain] com.nk.wipro.DonorServiceApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-08-15T14:43:52.169+05:30  INFO 4280 --- [DonorService] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:9091
+2025-08-15T14:43:52.169+05:30  INFO 4280 --- [DonorService] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=DonorService, profiles=[default], label=null, version=96800b8590db13d3e98a8c6becc9c5a26d8514aa, state=
+2025-08-15T14:43:54.624+05:30  INFO 4280 --- [DonorService] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-15T14:43:54.680+05:30  INFO 4280 --- [DonorService] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 49 ms. Found 1 JPA repository interface.
+2025-08-15T14:43:55.111+05:30  INFO 4280 --- [DonorService] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=17946057-bbc8-3c85-97b2-88159f231f40
+2025-08-15T14:43:55.938+05:30  INFO 4280 --- [DonorService] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9093 (http)
+2025-08-15T14:43:55.945+05:30  INFO 4280 --- [DonorService] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-15T14:43:55.945+05:30  INFO 4280 --- [DonorService] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-15T14:43:56.042+05:30  INFO 4280 --- [DonorService] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-15T14:43:56.043+05:30  INFO 4280 --- [DonorService] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3874 ms
+2025-08-15T14:43:56.981+05:30  INFO 4280 --- [DonorService] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-15T14:43:56.990+05:30  INFO 4280 --- [DonorService] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-15T14:43:57.023+05:30  INFO 4280 --- [DonorService] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-15T14:43:57.026+05:30  INFO 4280 --- [DonorService] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2025-08-15T14:43:57.096+05:30  INFO 4280 --- [DonorService] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@28e52e78
+2025-08-15T14:43:57.096+05:30  INFO 4280 --- [DonorService] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2025-08-15T14:43:57.100+05:30  WARN 4280 --- [DonorService] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-15T14:43:57.102+05:30  INFO 4280 --- [DonorService] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-4)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-15T14:43:57.390+05:30  INFO 4280 --- [DonorService] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-15T14:43:57.887+05:30  INFO 4280 --- [DonorService] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-15T14:43:59.275+05:30  WARN 4280 --- [DonorService] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-15T14:44:03.175+05:30  INFO 4280 --- [DonorService] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-15T14:44:03.340+05:30  INFO 4280 --- [DonorService] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-08-15T14:44:03.508+05:30  WARN 4280 --- [DonorService] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-08-15T14:44:03.544+05:30  INFO 4280 --- [DonorService] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 27 endpoints beneath base path '/actuator'
+2025-08-15T14:44:03.716+05:30  INFO 4280 --- [DonorService] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-08-15T14:44:03.728+05:30  INFO 4280 --- [DonorService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-08-15T14:44:03.729+05:30  INFO 4280 --- [DonorService] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-15T14:44:03.730+05:30  INFO 4280 --- [DonorService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-08-15T14:44:03.730+05:30  INFO 4280 --- [DonorService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-08-15T14:44:03.730+05:30  INFO 4280 --- [DonorService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-08-15T14:44:03.730+05:30  INFO 4280 --- [DonorService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-08-15T14:44:03.730+05:30  INFO 4280 --- [DonorService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-08-15T14:44:03.730+05:30  INFO 4280 --- [DonorService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-08-15T14:44:03.730+05:30  INFO 4280 --- [DonorService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-08-15T14:44:03.841+05:30  INFO 4280 --- [DonorService] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-08-15T14:44:03.842+05:30  INFO 4280 --- [DonorService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-08-15T14:44:03.843+05:30  INFO 4280 --- [DonorService] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-08-15T14:44:03.844+05:30  INFO 4280 --- [DonorService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1755249243844 with initial instances count: 5
+2025-08-15T14:44:03.884+05:30  INFO 4280 --- [DonorService] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application DONORSERVICE with eureka with status UP
+2025-08-15T14:44:03.884+05:30  INFO 4280 --- [DonorService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1755249243884, current=UP, previous=STARTING]
+2025-08-15T14:44:03.884+05:30  INFO 4280 --- [DonorService] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DONORSERVICE/DESKTOP-M6GPA6L:DonorService:9093: registering service...
+2025-08-15T14:44:03.897+05:30  INFO 4280 --- [DonorService] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9093 (http) with context path '/'
+2025-08-15T14:44:03.900+05:30  INFO 4280 --- [DonorService] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9093
+2025-08-15T14:44:03.932+05:30  INFO 4280 --- [DonorService] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DONORSERVICE/DESKTOP-M6GPA6L:DonorService:9093 - registration status: 204
+2025-08-15T14:44:03.961+05:30  INFO 4280 --- [DonorService] [restartedMain] com.nk.wipro.DonorServiceApplication     : Started DonorServiceApplication in 13.95 seconds (process running for 3064.918)
+2025-08-15T14:44:03.968+05:30  INFO 4280 --- [DonorService] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-08-15T14:44:42.672+05:30  INFO 4280 --- [DonorService] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 3 class path changes (2 additions, 0 deletions, 1 modification)
+2025-08-15T14:44:42.674+05:30  INFO 4280 --- [DonorService] [Thread-21] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application DONORSERVICE with eureka with status DOWN
+2025-08-15T14:44:42.675+05:30  INFO 4280 --- [DonorService] [Thread-21] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1755249282675, current=DOWN, previous=UP]
+2025-08-15T14:44:42.675+05:30  INFO 4280 --- [DonorService] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DONORSERVICE/DESKTOP-M6GPA6L:DonorService:9093: registering service...
+2025-08-15T14:44:42.680+05:30  INFO 4280 --- [DonorService] [Thread-21] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-15T14:44:42.690+05:30  INFO 4280 --- [DonorService] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DONORSERVICE/DESKTOP-M6GPA6L:DonorService:9093 - registration status: 204
+2025-08-15T14:44:42.692+05:30  INFO 4280 --- [DonorService] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-15T14:44:42.705+05:30  INFO 4280 --- [DonorService] [Thread-21] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-15T14:44:42.707+05:30  INFO 4280 --- [DonorService] [Thread-21] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2025-08-15T14:44:42.723+05:30  INFO 4280 --- [DonorService] [Thread-21] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2025-08-15T14:44:42.728+05:30  INFO 4280 --- [DonorService] [Thread-21] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-08-15T14:44:45.739+05:30  INFO 4280 --- [DonorService] [Thread-21] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-08-15T14:44:45.763+05:30  INFO 4280 --- [DonorService] [Thread-21] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DONORSERVICE/DESKTOP-M6GPA6L:DonorService:9093 - deregister  status: 200
+2025-08-15T14:44:45.764+05:30  INFO 4280 --- [DonorService] [Thread-21] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-08-15T14:44:47.884+05:30  INFO 4280 --- [DonorService] [restartedMain] com.nk.wipro.DonorServiceApplication     : Starting DonorServiceApplication using Java 21.0.7 with PID 4280 (C:\Users\Nikhila Kadaveru\eclipse-workspace\BloodDonarProject\DonorService\target\classes started by Nikhila Kadaveru in C:\Users\Nikhila Kadaveru\eclipse-workspace\BloodDonarProject\DonorService)
+2025-08-15T14:44:47.884+05:30  INFO 4280 --- [DonorService] [restartedMain] com.nk.wipro.DonorServiceApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-08-15T14:44:47.888+05:30  INFO 4280 --- [DonorService] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:9091
+2025-08-15T14:44:47.888+05:30  INFO 4280 --- [DonorService] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=DonorService, profiles=[default], label=null, version=96800b8590db13d3e98a8c6becc9c5a26d8514aa, state=
+2025-08-15T14:44:49.013+05:30  INFO 4280 --- [DonorService] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-15T14:44:49.031+05:30  INFO 4280 --- [DonorService] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16 ms. Found 1 JPA repository interface.
+2025-08-15T14:44:49.271+05:30  INFO 4280 --- [DonorService] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=17946057-bbc8-3c85-97b2-88159f231f40
+2025-08-15T14:44:50.144+05:30  INFO 4280 --- [DonorService] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9093 (http)
+2025-08-15T14:44:50.145+05:30  INFO 4280 --- [DonorService] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-15T14:44:50.145+05:30  INFO 4280 --- [DonorService] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-15T14:44:50.223+05:30  INFO 4280 --- [DonorService] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-15T14:44:50.223+05:30  INFO 4280 --- [DonorService] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2335 ms
+2025-08-15T14:44:51.127+05:30  INFO 4280 --- [DonorService] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-15T14:44:51.137+05:30  INFO 4280 --- [DonorService] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-15T14:44:51.169+05:30  INFO 4280 --- [DonorService] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-15T14:44:51.172+05:30  INFO 4280 --- [DonorService] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2025-08-15T14:44:51.279+05:30  INFO 4280 --- [DonorService] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-5 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2b78e8d3
+2025-08-15T14:44:51.280+05:30  INFO 4280 --- [DonorService] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2025-08-15T14:44:51.284+05:30  WARN 4280 --- [DonorService] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-15T14:44:51.285+05:30  INFO 4280 --- [DonorService] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-5)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-15T14:44:51.448+05:30  INFO 4280 --- [DonorService] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-15T14:44:51.515+05:30  INFO 4280 --- [DonorService] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-15T14:44:52.404+05:30  WARN 4280 --- [DonorService] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-15T14:44:55.867+05:30  INFO 4280 --- [DonorService] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-15T14:44:56.006+05:30  INFO 4280 --- [DonorService] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-08-15T14:44:56.177+05:30  WARN 4280 --- [DonorService] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-08-15T14:44:56.202+05:30  INFO 4280 --- [DonorService] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 27 endpoints beneath base path '/actuator'
+2025-08-15T14:44:56.328+05:30  INFO 4280 --- [DonorService] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-08-15T14:44:56.341+05:30  INFO 4280 --- [DonorService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-08-15T14:44:56.341+05:30  INFO 4280 --- [DonorService] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-15T14:44:56.341+05:30  INFO 4280 --- [DonorService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-08-15T14:44:56.341+05:30  INFO 4280 --- [DonorService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-08-15T14:44:56.341+05:30  INFO 4280 --- [DonorService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-08-15T14:44:56.341+05:30  INFO 4280 --- [DonorService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-08-15T14:44:56.342+05:30  INFO 4280 --- [DonorService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-08-15T14:44:56.342+05:30  INFO 4280 --- [DonorService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-08-15T14:44:56.342+05:30  INFO 4280 --- [DonorService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-08-15T14:44:56.572+05:30  INFO 4280 --- [DonorService] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-08-15T14:44:56.573+05:30  INFO 4280 --- [DonorService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-08-15T14:44:56.574+05:30  INFO 4280 --- [DonorService] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-08-15T14:44:56.575+05:30  INFO 4280 --- [DonorService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1755249296575 with initial instances count: 6
+2025-08-15T14:44:56.617+05:30  INFO 4280 --- [DonorService] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application DONORSERVICE with eureka with status UP
+2025-08-15T14:44:56.618+05:30  INFO 4280 --- [DonorService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1755249296618, current=UP, previous=STARTING]
+2025-08-15T14:44:56.618+05:30  INFO 4280 --- [DonorService] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DONORSERVICE/DESKTOP-M6GPA6L:DonorService:9093: registering service...
+2025-08-15T14:44:56.633+05:30  INFO 4280 --- [DonorService] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9093 (http) with context path '/'
+2025-08-15T14:44:56.635+05:30  INFO 4280 --- [DonorService] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9093
+2025-08-15T14:44:56.655+05:30  INFO 4280 --- [DonorService] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DONORSERVICE/DESKTOP-M6GPA6L:DonorService:9093 - registration status: 204
+2025-08-15T14:44:56.785+05:30  INFO 4280 --- [DonorService] [restartedMain] com.nk.wipro.DonorServiceApplication     : Started DonorServiceApplication in 10.881 seconds (process running for 3117.741)
+2025-08-15T14:44:56.793+05:30  INFO 4280 --- [DonorService] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-08-15T14:49:56.357+05:30  INFO 4280 --- [DonorService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-15T14:50:31.899+05:30  INFO 4280 --- [DonorService] [http-nio-9093-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-15T14:50:31.900+05:30  INFO 4280 --- [DonorService] [http-nio-9093-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-15T14:50:31.983+05:30  INFO 4280 --- [DonorService] [http-nio-9093-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 82 ms
+2025-08-15T14:54:56.394+05:30  INFO 4280 --- [DonorService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-15T14:59:56.426+05:30  INFO 4280 --- [DonorService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-15T15:04:56.466+05:30  INFO 4280 --- [DonorService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-15T15:09:22.486+05:30  INFO 4280 --- [DonorService] [RMI TCP Connection(104)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-08-15T15:09:22.493+05:30  INFO 4280 --- [DonorService] [RMI TCP Connection(104)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application DONORSERVICE with eureka with status DOWN
+2025-08-15T15:09:22.493+05:30  INFO 4280 --- [DonorService] [RMI TCP Connection(104)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1755250762493, current=DOWN, previous=UP]
+2025-08-15T15:09:22.495+05:30  INFO 4280 --- [DonorService] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DONORSERVICE/DESKTOP-M6GPA6L:DonorService:9093: registering service...
+2025-08-15T15:09:22.497+05:30  INFO 4280 --- [DonorService] [RMI TCP Connection(104)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-15T15:09:22.515+05:30  INFO 4280 --- [DonorService] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-15T15:09:22.538+05:30  INFO 4280 --- [DonorService] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DONORSERVICE/DESKTOP-M6GPA6L:DonorService:9093 - registration status: 204
+2025-08-15T15:09:22.541+05:30  INFO 4280 --- [DonorService] [RMI TCP Connection(104)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-15T15:09:22.546+05:30  INFO 4280 --- [DonorService] [RMI TCP Connection(104)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2025-08-15T15:09:22.555+05:30  INFO 4280 --- [DonorService] [RMI TCP Connection(104)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+2025-08-15T15:09:22.558+05:30  INFO 4280 --- [DonorService] [RMI TCP Connection(104)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...

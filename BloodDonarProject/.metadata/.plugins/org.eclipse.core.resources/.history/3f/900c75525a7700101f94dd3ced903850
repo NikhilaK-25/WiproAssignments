@@ -1,0 +1,23 @@
+package com.nk.wipro.services;
+
+
+import java.time.LocalDate;
+import java.util.List;
+
+import com.nk.wipro.entity.Donor;
+
+
+
+
+public interface DonorService {
+    Donor addDonor(Donor donor);
+    Donor updateDonor(Long id, Donor donor);
+    Donor getDonorById(Long id);
+    List<Donor> getDonorsByBloodGroup(String bloodGroup);
+    List<Donor> getDonorsByCity(String city);
+    List<Donor> getDonorsByCompany(String company);
+    void deleteDonor(Long id);
+    List<Donor> getDonorsByDate(LocalDate date);
+
+}
+
